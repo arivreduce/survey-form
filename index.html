@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Parsons Survey Form</h1>
+    <p id="description">
+      <em>Thank you for your feedback, we appreciate you.</em>
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name"
+        >Please enter your name:
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Ralph M. Parsons"
+          required
+      /></label>
+      <label id="email-label" for="email"
+        >Please enter your email:
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="ralphm@parsons.com"
+          required
+      /></label>
+      <label id="number-label" for="number"
+        >Please enter your age:
+        <input
+          id="number"
+          type="number"
+          name="number"
+          min="13"
+          max="120"
+          placeholder="128"
+      /></label>
+      <label for="dropdown">
+        How did you hear about us?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">LinkedIn</option>
+          <option value="2">Indeed</option>
+        </select>
+      </label>
+      <label for="full-time"
+        ><input id="full-time" type="radio" name="employment-type" checked />
+        Full-Time</label
+      >
+      <label for="part-time"
+        ><input id="part-time" type="radio" name="employment-type" />
+        Part-Time</label
+      >
+      <label for="internship"
+        ><input id="internship" type="radio" name="employment-type" />
+        Internship</label
+      >
+    </form>
+  </body>
+</html>
