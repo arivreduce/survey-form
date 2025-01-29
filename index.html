@@ -13,7 +13,7 @@
     </p>
     <form
       id="survey-form"
-      action="https://register-demo.freecodecamp.org"
+      action="http://www.posttestserver.com/"
       method="post"
     >
       <fieldset>
@@ -87,19 +87,23 @@
         </label>
         <p>What kind of work setting are you looking for?</p>
         <label for="remote">
-          <input id="remote" type="checkbox" value="remote" /> Remote
+          <input id="remote" type="checkbox" value="remote" name="remote" />
+          Remote
         </label>
         <label for="on-site">
-          <input id="on-site" type="checkbox" value="on-site" /> On-site
+          <input id="on-site" type="checkbox" value="on-site" name="on-site" />
+          On-site
         </label>
         <label for="hybrid">
-          <input id="hybrid" type="checkbox" value="hybrid" /> Hybrid
+          <input id="hybrid" type="checkbox" value="hybrid" name="hybrid" />
+          Hybrid
         </label>
         <p>Is there anything else you'd like to share about yourself?</p>
         <textarea
           rows="6"
           cols="48"
           placeholder="I like to do yoga on the beach..."
+          name="bio"
         ></textarea>
       </fieldset>
       <input type="submit" id="submit" />
