@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Survey Form</title>
+    <title>Parsons Survey Form</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Parsons Survey Form</h1>
+    <h1 id="title"><span class="logo">Parsons</span> Survey Form</h1>
     <p id="description">
       <em>Thank you for your feedback, we appreciate you.</em>
     </p>
     <form id="survey-form">
-      <label id="name-label" for="name"
-        >Please enter your name:
-        <input
-          id="name"
-          type="text"
-          name="name"
-          placeholder="Ralph M. Parsons"
-          required
-      /></label>
-      <label id="email-label" for="email"
-        >Please enter your email:
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="ralphm@parsons.com"
-          required
-      /></label>
-      <label id="number-label" for="number"
-        >Please enter your age:
-        <input
-          id="number"
-          type="number"
-          name="number"
-          min="13"
-          max="120"
-          placeholder="128"
-      /></label>
-      <label for="dropdown">
-        How did you hear about us?
-        <select id="dropdown" name="dropdown">
-          <option value="">(select one)</option>
-          <option value="1">LinkedIn</option>
-          <option value="2">Indeed</option>
-        </select>
-      </label>
-      <label for="full-time"
-        ><input id="full-time" type="radio" name="employment-type" checked />
-        Full-Time</label
-      >
-      <label for="part-time"
-        ><input id="part-time" type="radio" name="employment-type" />
-        Part-Time</label
-      >
-      <label for="internship"
-        ><input id="internship" type="radio" name="employment-type" />
-        Internship</label
-      >
+      <fieldset>
+        <label id="name-label" for="name"
+          >Please enter your name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ralph M. Parsons"
+            required
+        /></label>
+        <label id="email-label" for="email"
+          >Please enter your email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ralphm@parsons.com"
+            required
+        /></label>
+        <label id="number-label" for="number"
+          >Please enter your age:
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="13"
+            max="120"
+            placeholder="128"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">
+          How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">LinkedIn</option>
+            <option value="2">Indeed</option>
+          </select>
+        </label>
+        <p>What type of employment are you looking for?</p>
+        <label for="full-time">
+          <input id="full-time" type="radio" name="employment-type" checked />
+          Full-time
+        </label>
+        <label for="part-time">
+          <input id="part-time" type="radio" name="employment-type" />
+          Part-time
+        </label>
+        <label for="internship">
+          <input id="internship" type="radio" name="employment-type" />
+          Internship
+        </label>
+        <p>What kind of work setting are you looking for?</p>
+        <label for="remote">
+          <input id="remote" type="checkbox" value="remote" /> Remote
+        </label>
+        <label for="on-site">
+          <input id="on-site" type="checkbox" value="on-site" /> On-site
+        </label>
+        <label for="hybrid">
+          <input id="hybrid" type="checkbox" value="hybrid" /> Hybrid
+        </label>
+        <p>Is there anything else you'd like to share about yourself?</p>
+        <textarea
+          rows="6"
+          cols="48"
+          placeholder="I like to do yoga on the beach..."
+        ></textarea>
+      </fieldset>
+      <input type="submit" id="submit" />
     </form>
   </body>
 </html>
