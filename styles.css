@@ -58,6 +58,7 @@ input[type='submit'] {
 }
 .logo {
   background: linear-gradient(90deg, #00aee6, #5cb83c);
+  background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
